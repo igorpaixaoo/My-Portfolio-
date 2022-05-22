@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto+Condensed:wght@300&display=swap');
+        
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: white;
+}
+#text-main{
+    font-family: 'Montserrat', sans-serif;
+    color: #423f5c;
+    text-align: center;        
+    width: 60%; 
+    /*margin-top: 20%;   
+    margin-left: 10%;*/
+    font-size: 40px;
+}
+.container{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    margin-top: 20%;   
+}
+.color-main{
+    color: #1edada;
+}
+
+.links{       
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 10%;
+    background-image: linear-gradient(to right, #2d2b3f, #35334b, #59567a, #35334b, #2d2b3f);
+    width: 100%;
+    height: 200px;
+}
+#git-hub, #linkedin{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    height: 70px;
+    width: 160px;
+    background-color: transparent;
+    color: white;    
+    border-radius: 5px;
+    border-color: #1edada;
+    border-style: solid;
+    margin-inline: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#instagram{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    height: 70px;
+    width: 180px;
+    background-color: transparent;
+    color: white;    
+    border-radius: 5px;
+    border-color: #1edada;
+    border-style: solid;
+    margin-inline: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#git-hub:hover, #linkedin:hover, #instagram:hover{
+    background-color: #1edada;
+    border-radius: 10px;
+    font-size: 22pt;
+}
+
+.img{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#igor{
+    height: 220px;
+}
+
+.footer{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, #2d2b3f, #35334b, #59567a, #35334b, #2d2b3f);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12pt;
+}
+
+.projetos{
+    display: flex;     
+    width: 100%;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+}
+#discription-urna{
+    margin-left: 20px;
+    width: 26%;
+    text-align: justify;
+}
+#nome-projeto{
+    margin-left: 20px;
+}
+#version{
+    color: #10a5a5;
+}
+
+#git-urna{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    background-color: #1edada;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 5px;
+    border-color: #1edada;
+    border-style: solid;
+}
+#git-urna:hover{
+    border-radius: 10px;
+    font-size: 14pt;
+    background-color: #0b7979;
+    border-color: #0b7979;
+}
+#projeto{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 480px) {
+    #text-main{
+        font-size: 13pt;
+        width: 300px;
+    }
+    .img{
+        top: 8%;
+        left: 75%;
+    }
+    #igor{
+        height: 100px;
+    }
+    .links{
+        height: 100px;
+    }
+    #git-hub, #instagram, #linkedin{
+        width: 120px;
+        height: 50px;
+        font-size: 12pt;
+        margin-inline: 5px;
+    }
+    #projeto{
+        font-size: 18pt;
+    }
+    #nome-projeto{
+        font-size: 15pt;
+        margin-top: 20px;
+    }
+    #discription-urna{
+        font-size: 12pt;
+        width: 70%;
+    }
+}
