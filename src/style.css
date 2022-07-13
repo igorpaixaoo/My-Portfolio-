@@ -98,21 +98,26 @@ body{
 }
 
 .projetos{
-    display: flex;     
+    display: inline;   
     width: 100%;
     height: 400px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15pt;
 }
-#discription-urna{
+#discription-urna, #discription-memory, #discription-cep{
     margin-left: 20px;
     width: 26%;
     text-align: justify;
 }
-#nome-projeto{
+
+#discription-memory, #discription-cep{
+    margin-left: 0;
+}
+
+#nome-projeto1{
     margin-left: 20px;
 }
-#version{
+#version-urna, #version-memory, #version-cep{
     color: #10a5a5;
 }
 
@@ -131,7 +136,23 @@ body{
     border-color: #1edada;
     border-style: solid;
 }
-#git-urna:hover{
+
+#git-memory{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    background-color: #1edada;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 5px;
+    border-color: #1edada;
+    border-style: solid;
+}
+
+#git-urna:hover, #git-memory:hover{
     border-radius: 10px;
     font-size: 14pt;
     background-color: #0b7979;
@@ -140,6 +161,10 @@ body{
 #projeto{
     margin-top: 30px;
     text-align: center;
+}
+
+.projeto2, .projeto3{
+    margin-left: 20px;
 }
 
 /*Responsividade*/
@@ -167,11 +192,11 @@ body{
     #projeto{
         font-size: 18pt;
     }
-    #nome-projeto{
+    #nome-projeto1, #nome-projeto2, #nome-projeto3{
         font-size: 15pt;
         margin-top: 20px;
     }
-    #discription-urna{
+    #discription-urna, #discription-memory, #discription-cep{
         font-size: 12pt;
         width: 70%;
     }
